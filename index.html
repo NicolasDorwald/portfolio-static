@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Love+Light&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Accueil</title>
+</head>
+<body>
+<header>
+    <section class="banner">
+        <div class="name">nicolas dorwald</div>
+        <h1>Web & Web Mobile Developer</h1>          
+    </section>
+    <div class="navbar">
+        <button id="projectsBtn">Projets</button>
+        <button id="aboutBtn">À propos</button>
+        <button id="skillsBtn">Compétences</button>
+        <button id="contactBtn">Contact</button>
+    </div>
+</header>
+<main>
+    <section class="home-section"> 
+        <div class="intro">
+            <h2 class="hero-title">
+                <div class="slogan1">Des interfaces simples -- </div>
+                <div class="hero-line"></div>
+                <div class="slogan2">Pensées pour durer</div>
+            </h2>
+            <p> Je conçois des interfaces claires et fonctionnelles, 
+                où l’expérience utilisateur et la lisibilité du code 
+                ne sont jamais des détails.
+            </p>
+            <p>Découvrez mes projets et mon approche du développement web.
+            </p>
+    </section>
+<!----------------- projects ------------------->
+    <section class="projects-section">
+        <h3> - Mes projets - </h3>
+        <div class="projects-container">
+            <div class="project-tabs">
+                <button data-project="naturo">- Projet Jane Doe - Naturopathe</button>
+                <button data-project="ocoffee">- Projet e-commerce (en cours)</button>
+            </div>
+
+        <!-- Projet 1 -->
+        <div class="project-card" id="naturo">
+            <div class="project-content">
+                <h3 class="project-title">Jane Doe - Naturopathe</h3>
+
+                <div class="project-gallery">
+                    <div class="main-img-wrapper">
+                        <img src="/images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="project-img main-img">
+                    </div>
+                    <div class="project-thumbnails">
+                        <img src="/images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="thumb active">
+                        <img src="/images/naturo/naturo-home-mobile.png" alt="Capture d'écran de la version mobile de la page d'accueil" class="thumb">
+                        <img src="/images/naturo/naturo-contact-desktop.png" alt="Capture d'écran du formulaire de contact" class="thumb">
+                        <img src="/images/naturo/naturo-rdvmobile.png" alt="Capture d'écran de l'interface de prise d'un rdv" class="thumb">
+                    </div>
+                </div>
+
+                <p class="project-objective">
+                    <strong>Objectif : </strong>Concevoir un site vitrine clair et accessible, 
+                    mettre en place des fonctionnalités dynamiques sans serveur, 
+                    découvrir et intégrer des APIs tierces, structurer un projet front-end propre et maintenable.
+                </p>
+                <p class="project-tech"><strong>Stack : </strong>HTML, CSS, JS, API</p>
+                    <p class="project-comment">
+                        <strong>Commentaires :</strong>Petit site vitrine pour un(e) naturopathe, 
+                        développé en HTML, CSS et JS, sans backend, qui m’a permis d’intégrer des 
+                        fonctionnalités dynamiques en consommant les services externes de deux APIs : 
+                        Calendly pour la prise de rendez-vous et Formspree pour le formulaire de 
+                        contact. J’y ai également géré les interactions utilisateur (menu burger, 
+                        messages du formulaire) et déployé le site statiquement sur GitHub Pages, 
+                        avec le code disponible sur GitHub. 
+                    </p>
+                <div class="project-links">
+                    <a href="https://github.com/NicolasDorwald/naturo-static" target="_blank">GitHub</a> | 
+                    <a href="https://nicolasdorwald.github.io/naturo-static/" target="_blank">Site en ligne</a>
+                </div>
+            </div>
+        </div>
+        <!-------------->
+        </div>
+        <button class="return">←  Retour à l'accueil</button>
+    </section>
+<!----------------- about ------------------->
+    <section class="about-section">
+        <h3> - Mon parcours - </h3>
+        <p>Initialement formé en électrotechnique, j’ai commencé ma carrière 
+            dans le bâtiment en tant qu’électricien, où chaque tâche m’a appris 
+            la rigueur, la concentration et l’importance du travail bien fait.</p>
+
+            <p>L’émergence de nouvelles opportunités dans le numérique m’a naturellement 
+            attiré vers le développement web. Après un court accompagnement dispensé 
+            par l’AFPA qui m'a permis de suivre une formation intensive de 8 mois en 
+            développement web et web mobile proposée par O’Clock, j’ai obtenu mon titre 
+            professionnel en novembre 2025. Cette expérience m’a permis d’acquérir des 
+            bases solides et de développer une approche structurée, tout en conservant 
+            une dimension personnelle et une communication claire dans la présentation 
+            de mes projets.</p>
+
+            <p>Aujourd’hui, je souhaite mettre ces qualités au service de projets web, 
+            tout en continuant à explorer le design et à améliorer l’expérience utilisateur. 
+            Chaque projet est pour moi une opportunité de combiner technique et créativité 
+            afin de créer des interfaces simples et efficaces.</p>
+        <button class="return">←  Retour à l'accueil</button>
+    </section>
+<!----------------- skills ------------------->
+    <section class="skills-section">
+        <h3> - Mes compétences - </h3>
+        <div class="skills-tech">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">VS Code</span>
+        </div>
+        <div class="skills-soft">
+            <ul>
+                <li><strong>S’adapter</strong> à de nouvelles méthodologies</li>
+                <li><strong>Suivre</strong> un cahier des charges</li>
+                <li><strong>Conceptualiser</strong> un projet</li>
+                <li><strong>Respecter</strong> les consignes du client</li>
+                <li><strong>Analyser</strong> et trouver une solution à un problème</li>
+                <li><strong>Organiser</strong> et optimiser son temps</li>
+                <li><strong>Travailler</strong> en équipe et en autonomie</li>
+                <li><strong>Répondre</strong> à des besoins spécifiques</li>
+                <li><strong>Travailler</strong> sous tension de manière réfléchie</li>
+            </ul>
+        </div>
+        <button class="return">←  Retour à l'accueil</button>
+    </section>
+<!----------------- contact ------------------->
+    <section class="contact-section">
+        <h3> - Contact - </h3>
+
+        <form class="contact-form" action="https://formspree.io/f/mzddpwgd" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Votre nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="Votre email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Votre message" required></textarea>
+
+            <button type="submit"><span class="send-icon">↪</span> Envoyer</button>
+        </form>
+        <!-- confirmation de l'envoi réussi -->
+        <p class="contact-confirmation" aria-live="polite">Merci ! Votre message a bien été envoyé.</p>
+
+        <button class="return">←  Retour à l'accueil</button>
+    </section>
+</main>
+<footer>
+    <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <!-- Facebook SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#4267B2" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54v-2.205c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.465h-1.26c-1.243 0-1.63.771-1.63 1.562v1.873h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <!-- Instagram SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#C13584" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.772.131 4.603.403 3.635 1.371 2.667 2.339 2.395 3.508 2.336 4.788.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.059 1.28.331 2.449 1.299 3.417.968.968 2.137 1.24 3.417 1.299C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.28-.059 2.449-.331 3.417-1.299.968-.968 1.24-2.137 1.299-3.417.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.059-1.28-.331-2.449-1.299-3.417C19.397.403 18.228.131 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
+            </a>
+            <a href="https://www.github.com/NicolasDorwald" target="_blank" aria-label="GitHub">
+                <!-- Github -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2.02c-3.2.7-3.88-1.38-3.88-1.38-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.28 5.69.41.35.77 1.04.77 2.1v3.11c0 .3.21.65.79.54A11.52 11.52 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolas-dorwald-b88643334/" target="_blank" aria-label="LinkedIn">
+                <!-- LinkedIn SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0077B5" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.035-1.849-3.035-1.849 0-2.133 1.445-2.133 2.939v5.665h-3.554V9h3.414v1.561h.049c.476-.899 1.637-1.849 3.372-1.849 3.602 0 4.268 2.368 4.268 5.452v6.288zM5.337 7.433c-1.144 0-2.069-.927-2.069-2.069 0-1.144.926-2.07 2.069-2.07 1.143 0 2.069.926 2.069 2.07 0 1.142-.926 2.069-2.069 2.069zM7.119 20.452H3.554V9h3.565v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.555C0 23.23.792 24 1.771 24h20.451c.979 0 1.772-.77 1.772-1.722V1.723C23.997.77 23.204 0 22.225 0z"/>
+                </svg>
+            </a>
+    </div>
+    <div class="copyright">&copy; 2026 Nicolas Dorwald. Tous droits réservés.</div>   
+</footer>
+<script type="module" src="./js/index.js"></script>
+<script type="module" src="./js/projects-nav.js"></script>
+<script type="module" src="./js/projects-gallery.js"></script>
+<script type="module" src="./js/contact.js"></script>
+</body>
+</html>

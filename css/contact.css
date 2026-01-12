@@ -1,0 +1,55 @@
+/*------- contact section -------*/
+
+.contact-section { 
+    margin:0 auto; 
+}
+
+.contact-form {
+    padding: 0 2rem; 
+    display:flex; 
+    flex-direction:column; 
+    gap:1rem; 
+    margin:auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.6rem 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 6px;
+    width: 100%; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color:red; 
+    outline:none; 
+}
+
+.contact-form button {
+    width:200px; 
+    outline:none;
+    position:relative; 
+    overflow:hidden;
+}
+
+.contact-form button:active { 
+    background-color: rgba(164,1,1,0.564); color:white; 
+}
+
+.send-icon { 
+    display:flex; 
+    font-size: var(--fs-mid); 
+    margin-right:1rem; 
+}
+
+.contact-confirmation { 
+    display:none; 
+    color:rgba(0,128,0,0.605); 
+    font-weight:bold; 
+    opacity:0; 
+    transition: opacity 0.5s ease; 
+}
+
+.contact-confirmation.show { 
+    opacity:1; }

@@ -1,0 +1,97 @@
+@import url("reset.css");
+@import url("header-footer.css");
+@import url("home-about.css");
+@import url("anim.css");
+@import url("projects.css");
+@import url("skills.css");
+@import url("contact.css");
+
+
+/*---- variables----*/
+:root {
+    --clr-primary: #3498db;
+    --clr-secondary: #2ecc71;
+    --clr-accent: #e74c3c;
+    --clr-background: #f5f5f5;
+    --clr-text: #333333;
+
+    --ff-sansation: "Sansation", sans-serif;
+    --ff-suse: "SUSE Mono", sans-serif;
+
+    --fs-name: 2rem;
+    --fs-mid: 1.4rem;
+    --fs-regular: 1rem;
+    --fs-sm: 0.9rem;
+
+    --fw-thin: 360;
+    --fw-regular: 500;
+    --fw-bold: 800;
+}
+
+/*-------- common --------*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Sansation", sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+.intro, .navbar, .about-section, .skills-section, .contact-section, .skills-soft, .contact-form, .project-img { 
+    max-width: 400px; 
+}
+
+.contact-section , .skills-section , .about-section , .projects-section {
+    display: none;
+}
+
+h1 , .project-content > h3 {
+    letter-spacing: 3.6px;
+}
+
+h3 {
+    font-size: var(--fs-mid);
+    font-weight: var(--fw-regular);
+    text-align: center;   
+    margin-bottom: 20px;
+}
+
+strong {
+    position: relative; /* nécessaire pour le ::after */
+    font-weight: bold;
+}
+
+button {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+.intro, .about-section, .skills-section, .contact-section {
+    font-size: var(--fs-regular);
+    margin: 0 auto;
+}
+
+.home, .skills-section { 
+    padding: 0 1rem; 
+}
+
+/*----------- Return Button ------------*/
+.return {
+    margin: 2rem auto;
+}

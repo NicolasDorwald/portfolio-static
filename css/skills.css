@@ -1,0 +1,58 @@
+/*--------- skills section ---------*/
+.skills-tech { 
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1rem; 
+    margin: 1rem 0 2rem 0; 
+}
+
+.skill-tag { 
+    padding: 0.5rem 0.8rem; 
+    border-radius: 0.5rem; 
+    border: 1px solid black; 
+}
+
+.skills-soft { 
+    display: flex; 
+    margin: auto; 
+}
+
+.skills-soft ul { 
+    list-style: none; 
+    padding-left: 1rem; 
+}
+
+.skills-soft li {
+    position: relative; 
+    padding-left: 1.2rem; 
+    margin-bottom: 0.6rem; 
+    font-size: var(--fs-regular); 
+    font-weight: var(--fw-thin);
+}
+
+.skills-soft li::before { 
+    content:"➤"; 
+    position:absolute; 
+    left:0; 
+    opacity:0.7; 
+    font-size:0.8rem; 
+}
+
+.skills-soft li strong { 
+    position: relative; 
+    font-weight: bold; 
+}
+/* ----- underline fx -------*/
+.skills-soft li strong::after {
+    content:""; 
+    position:absolute; 
+    left:0; bottom:-2px; 
+    height:2px; 
+    width:0;
+    background-color:red; 
+    transition: width 0.5s ease;
+}
+
+.skills-soft li strong:hover::after {
+     width: 100%; 
+}

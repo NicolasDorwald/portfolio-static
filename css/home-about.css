@@ -1,0 +1,52 @@
+/*------- home section ------*/
+
+.intro { 
+    margin: 2rem auto; 
+}
+
+.intro > h2 {
+    font-size: var(--fs-mid); 
+    padding: 1rem; 
+    font-weight: var(--fw-regular); 
+}
+
+.intro > p, .about-section > p { 
+    padding: 0 2rem; 
+    font-weight: var(--fw-thin); 
+}
+
+.intro > p , .skill-tag , .contact-confirmation{ 
+    text-align: center; 
+}
+
+.about-section > p , .slogan1 { 
+    text-align: left; 
+}
+
+.slogan2 { 
+    text-align: right; 
+}
+
+/*------ home hero redline ------*/
+.hero-line {
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* Étirement */
+.hero-line.active {
+    width: 80%;
+    transition: width 1s ease-out; /* étirement lent */
+}
+
+/* Rétractation */
+.hero-line.retract {
+    width: 0;
+    opacity: 0;
+    transition: width 1s ease-in, opacity 1s ease-in; /* rétractation plus rapide */
+}

@@ -1,0 +1,113 @@
+/*--------- projects section --------*/
+
+ .projects-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.project-card {
+    display:none; 
+    max-width: 600px; 
+    width: 100%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card.active { 
+    display:block; 
+}
+
+.project-img {
+	width: 100%;
+	margin: auto;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+}
+
+.project-content {
+  	padding: 1rem 1.5rem;
+}
+
+.project-content > h3 {
+    font-size: var(--fs-regular);
+}
+
+.project-objective strong , .project-tech strong , .project-comment strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.project-objective , .project-tech , .project-comment {
+  	margin: 1.2rem 0.6rem;
+}
+
+.project-links a:hover {
+  	text-decoration: underline;
+}
+
+.project-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+    margin: 1rem 0;
+}
+/*------- pics gallery -------*/
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 100%;
+    align-items: center;
+}
+
+.main-img-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #cfcfcf5f;
+}
+
+.main-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: opacity 0.4s ease;  
+    opacity: 1;
+}
+
+.project-thumbnails {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-height: 100px;
+}
+
+.thumb {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 4px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.thumb:hover , .thumb.active{
+    opacity: 1;
+}
+
+.thumb.active {
+    transform: scale(1.05);
+}
