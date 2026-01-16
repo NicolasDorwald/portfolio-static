@@ -23,6 +23,10 @@
     text-align: left; 
 }
 
+.about-section > p {
+    margin: 1rem 0;
+}
+
 .slogan2 { 
     text-align: right; 
 }
