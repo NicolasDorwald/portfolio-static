@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
     
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+    <link rel="shortcut icon" href="/images/favicon-32.png">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Love+Light&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-    <title>Accueil</title>
+    <title>Portfolio - Nicolas Dorwald</title>
 </head>
 <body>
 <header>
@@ -45,48 +49,88 @@
         <div class="projects-container">
             <div class="project-tabs">
                 <button data-project="naturo">- Projet Jane Doe - Naturopathe</button>
-                <button data-project="ocoffee">- Projet e-commerce (en cours)</button>
+                <button data-project="cafetier">- Projet e-commerce - cafetier</button>
             </div>
-
         <!-- Projet 1 -->
-        <div class="project-card" id="naturo">
-            <div class="project-content">
-                <h3 class="project-title">Jane Doe - Naturopathe</h3>
+            <div class="project-card" id="naturo">
+                <div class="project-content">
+                    <h3 class="project-title">Jane Doe - Naturopathe</h3>
 
-                <div class="project-gallery">
-                    <div class="main-img-wrapper">
-                        <img src="./images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="project-img main-img">
+                    <div class="project-gallery">
+                        <div class="main-img-wrapper">
+                            <img src="./images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="project-img main-img">
+                        </div>
+                        <div class="project-thumbnails">
+                            <img src="./images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="thumb active">
+                            <img src="./images/naturo/naturo-home-mobile.png" alt="Capture d'écran de la version mobile de la page d'accueil" class="thumb">
+                            <img src="./images/naturo/naturo-contact-desktop.png" alt="Capture d'écran du formulaire de contact" class="thumb">
+                            <img src="./images/naturo/naturo-rdv-mobile.png" alt="Capture d'écran de l'interface de prise d'un rdv" class="thumb">
+                        </div>
                     </div>
-                    <div class="project-thumbnails">
-                        <img src="./images/naturo/naturo-home-desktop.png" alt="Capture d'écran de la version desktop de la page d'accueil" class="thumb active">
-                        <img src="./images/naturo/naturo-home-mobile.png" alt="Capture d'écran de la version mobile de la page d'accueil" class="thumb">
-                        <img src="./images/naturo/naturo-contact-desktop.png" alt="Capture d'écran du formulaire de contact" class="thumb">
-                        <img src="./images/naturo/naturo-rdv-mobile.png" alt="Capture d'écran de l'interface de prise d'un rdv" class="thumb">
-                    </div>
-                </div>
 
-                <p class="project-objective">
-                    <strong>Objectif : </strong>Concevoir un site vitrine clair et accessible, 
-                    mettre en place des fonctionnalités dynamiques sans serveur, 
-                    découvrir et intégrer des APIs tierces, structurer un projet front-end propre et maintenable.
-                </p>
-                <p class="project-tech"><strong>Stack : </strong>HTML, CSS, JS, API</p>
-                    <p class="project-comment">
-                        <strong>Commentaires :</strong>Petit site vitrine pour un(e) naturopathe, 
-                        développé en HTML, CSS et JS, sans backend, qui m’a permis d’intégrer des 
-                        fonctionnalités dynamiques en consommant les services externes de deux APIs : 
-                        Calendly pour la prise de rendez-vous et Formspree pour le formulaire de 
-                        contact. J’y ai également géré les interactions utilisateur (menu burger, 
-                        messages du formulaire) et déployé le site statiquement sur GitHub Pages, 
-                        avec le code disponible sur GitHub. 
+                    <p class="project-objective">
+                        <strong>Objectif : </strong>Concevoir un site vitrine clair et accessible, 
+                        mettre en place des fonctionnalités dynamiques sans serveur, 
+                        découvrir et intégrer des APIs tierces, structurer un projet front-end propre et maintenable.
                     </p>
-                <div class="project-links">
-                    <a href="https://github.com/NicolasDorwald/naturo-static" target="_blank">GitHub</a> | 
-                    <a href="https://nicolasdorwald.github.io/naturo-static/" target="_blank">Site en ligne</a>
+                    <p class="project-tech"><strong>Stack : </strong>HTML, CSS, JS, API</p>
+                        <p class="project-comment">
+                            <strong>Commentaires :</strong>Petit site vitrine pour un(e) naturopathe, 
+                            développé en HTML, CSS et JS, sans backend, qui m’a permis d’intégrer des 
+                            fonctionnalités dynamiques en consommant les services externes de deux APIs : 
+                            Calendly pour la prise de rendez-vous et Formspree pour le formulaire de 
+                            contact. J’y ai également géré les interactions utilisateur (menu burger, 
+                            messages du formulaire) et déployé le site statiquement sur GitHub Pages, 
+                            avec le code disponible sur GitHub. 
+                        </p>
+                    <div class="project-links">
+                        <a href="https://github.com/NicolasDorwald/naturo-static" target="_blank">GitHub</a> | 
+                        <a href="https://nicolasdorwald.github.io/naturo-static/" target="_blank">Site en ligne</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-------------->
+        <!-- Projet 2 -->
+            <div class="project-card" id="cafetier">
+                <div class="project-content">
+                    <h3 class="project-title">Le Comptoir du Café</h3>
+
+                    <div class="project-gallery">
+                        <div class="main-img-wrapper">
+                            <img src="./images/o-coffee/comptoir-du-cafe-home-desk.webp" alt="Capture d'écran de la version desktop de la page d'accueil" class="project-img main-img">
+                        </div>
+                        <div class="project-thumbnails">
+                            <img src="./images/o-coffee/comptoir-du-cafe-home-desk.webp" alt="Capture d'écran de la version desktop de la page d'accueil" class="thumb active">
+                            <img src="./images/o-coffee/comptoir-du-cafe-home-mobile.webp" alt="Capture d'écran de la version mobile de la page d'accueil" class="thumb">
+                            <img src="./images/o-coffee/comptoir-du-cafe-contact-mobile.webp" alt="Capture d'écran de la version mobile de la page de contact" class="thumb">
+                            <img src="./images/o-coffee/comptoir-du-cafe-cart-desk.webp" alt="Capture d'écran de la page panier" class="thumb">
+                            <img src="./images/o-coffee/comptoir-du-cafe-catalog-desk.webp" alt="Capture d'écran du catalogue" class="thumb">
+                        </div>
+                    </div>
+
+                    <p class="project-objective">
+                        <strong>Objectif : </strong>Créer un site e‑commerce basé sur le modèle MVC, 
+                        en partant d’un projet de formation, et l’étendre pour intégrer une gestion 
+                        dynamique du panier avec React ainsi qu’un formulaire de contact fonctionnel 
+                        avec Formspree.
+                    </p>
+                    <p class="project-tech"><strong>Stack : </strong>HTML, CSS, JS, Express, Formspree, React</p>
+                        <p class="project-comment">
+                            <strong>Commentaires :</strong> 
+                            Après avoir revu le design, le principal challenge a été d’intégrer React 
+                            dans un projet existant et de gérer la mise à jour dynamique du panier pour 
+                            la première fois, tout en conservant la structure MVC.
+                            <br>
+                            L'hébergement du projet a été fait sur Render pour le site, et Neon pour la 
+                            base de données, celle ci étant prévue pour une future fonctionnalité de 
+                            login et création de compte.
+                        </p>    
+                    <div class="project-links">
+                        <a href="https://github.com/NicolasDorwald/e-commerce-cafetier" target="_blank">GitHub</a> | 
+                        <a href="https://e-commerce-cafetier.onrender.com/" target="_blank">Site en ligne</a>
+                    </div>
+                </div>
+            </div>
+        <!-- Projet 3 -->
         </div>
         <button class="return">←  Retour à l'accueil</button>
     </section>
