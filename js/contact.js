@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(form);
 
         try {
-            const res = await fetch(form.action, { // action = URL Formspree
+            const res = await fetch(form.action, { 
                 method: "POST",
                 body: formData,
                 headers: {
@@ -19,14 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (res.ok) {
-                // Vide le formulaire
+
                 form.reset();
 
-                // Affiche le message de confirmation
                 confirmation.style.display = "block";
                 confirmation.classList.add("show");
 
-                // Disparaît après 5 secondes
                 setTimeout(() => {
                     confirmation.style.display = "none";
                     confirmation.classList.remove("show");

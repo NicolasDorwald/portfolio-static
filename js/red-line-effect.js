@@ -5,7 +5,7 @@ export function displayHeroLine() {
     // Étirement
     line.classList.add('active');
 
-    // Rétractation immédiate après la fin de l'étirement
+    // Rétractation 
     setTimeout(() => {
         line.classList.remove('active');
         line.classList.add('retract');
